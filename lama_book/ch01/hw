@@ -1,3 +1,7 @@
 #!/usr/bin/perl
 
-print "Hello, perl world! Epta!\n"
+use Modern::Perl '2017';
+
+print "Hello, perl world! Epta!\n";
+say "next text line here";
+say "текст по-русски ептыть!";
