@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-use v5.10;
+use v5.24;
 use strict;
 use warnings FATAL => 'all';
 use utf8;

@@ -2,7 +2,15 @@
 
 use Modern::Perl;
 use utf8;
-binmode(STDOUT, ':utf8');
+#binmode(STDOUT, ':utf8');
+use Encode::Locale;
+use Encode;
+
+if (-t) {
+    binmode(STDIN, ":encoding(console_in)");
+    binmode(STDOUT, ":encoding(console_out)");
+    binmode(STDERR, ":encoding(console_out)");
+}
 
 sub marine {
     state $n = 0;
